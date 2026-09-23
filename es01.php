@@ -47,4 +47,37 @@
             echo '🤘';
         }
     }
+
+
+    $z = 1; 
+    $tot = 0;
+    while($z<=100){
+        $tot = $tot + $z;
+        $z++;
+    }
+    
+    echo '<span style = "color:green">La somma dei primi 100 numeri è : </span>' . $tot;
+
+    $conta = 200;
+
+    do{
+        echo '🪙';
+        $conta -= 3; 
+    }while($conta > 0);
+
+    foreach($arr as $a){
+        echo $a; 
+    }
+
+    //selezione
+    $colore = 'giallo';
+    switch($colore){
+        case 'giallo' : echo '<span style="color:yellow">';break;
+        case 'verde' : echo '<span style="color:green">';break;
+        case 'blu' : echo '<span style="color:blu">';break;
+        case 'rosso' : echo '<span style="color:red">';break;
+        default: echo '<span style="color:grey">';break;
+    }
+
+    echo 'hai scelto il colore ' . $colore . '</span>';
 ?>
