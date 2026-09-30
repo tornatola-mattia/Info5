@@ -18,7 +18,7 @@
         default: echo '<span style="color:grey">';break;
         }
         ?>
-        <p>Bronto, bizzeria grande biramide diegitto</p>
+        <p>Bronto, bizzeria grande biramide d'egitto</p>
     </div>
     
 </body>

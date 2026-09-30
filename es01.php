@@ -15,7 +15,6 @@
     print_r($arr);
 
 
-    
     echo $arr['0'];
 
     //controlli per debug
