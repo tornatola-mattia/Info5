@@ -1,13 +1,11 @@
 <?php
-
-$auto = [
+    $auto = [
     ["marca" => "Fiat", "modello" => "500", "vendite" => 15],
     ["marca" => "BMW", "modello" => "Serie 1", "vendite" => 8],
     ["marca" => "Audi", "modello" => "A3", "vendite" => 12],
     ["marca" => "Mercedes", "modello" => "Classe A", "vendite" => 6],
     ["marca" => "Toyota", "modello" => "Yaris", "vendite" => 10]
 ];
-
 ?>
 
 <!DOCTYPE html>
@@ -77,9 +75,7 @@ $auto = [
             <?php
 
             foreach($auto as $a){
-
-                echo "<option value='".$a['modello']."'>".$a['modello']."</option>";
-
+                echo "<option value='".$a['marca']"'>".$a['marca']"</option>"
             }
 
             ?>
@@ -96,27 +92,10 @@ $auto = [
     <?php
 
     if(isset($_GET['auto'])){
-
         $autoScelta = $_GET['auto'];
-
-        foreach($auto as $a){
-
-            if($a['modello'] == $autoScelta){
-
-                echo "<h2>".$a['marca']."</h2>";
-                echo "<p>Modello: ".$a['modello']."</p>";
-                echo "<p>Vendite: ".$a['vendite']."</p>";
-
-                for($i=0; $i<$a['vendite']; $i++){
-
-                    echo "<img src='imgs/auto.jpg' width='40'>";
-
-                }
-
-            }
-
+        if($a['marca'] == $autoScelta)
+            foreach($auto as $a){
         }
-
     }
 
     ?>
