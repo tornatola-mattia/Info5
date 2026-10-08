@@ -72,14 +72,6 @@
 
         <select name="auto">
 
-            <?php
-
-            foreach($auto as $a){
-                echo "<option value='".$a['marca']"'>".$a['marca']"</option>"
-            }
-
-            ?>
-
         </select>
 
         <button type="submit" id="visualizza">
@@ -87,18 +79,6 @@
         </button>
 
     </form>
-
-
-    <?php
-
-    if(isset($_GET['auto'])){
-        $autoScelta = $_GET['auto'];
-        if($a['marca'] == $autoScelta)
-            foreach($auto as $a){
-        }
-    }
-
-    ?>
 
 </body>
 
