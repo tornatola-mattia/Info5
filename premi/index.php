@@ -101,6 +101,10 @@ try {
 
     </table>
 
+    <a href="nuovo.php">Inserisci un nuovo biglietto</a>
+    <a href="cancellazione.php">Cancella biglietto</a>
+    <a href="aggiorna.php">Aggiorna biglietto</a>
+
     <br><br>
 
     <h2>Classifica città più fortunate</h2>
